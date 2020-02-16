@@ -52,3 +52,20 @@ F(1048576) mod 65537 = 49949
 |[visualfc](https://github.com/visualfc/fibutil)|134541862|8177616|1254|
 |fibcalc.Sequential|92443066|2669724|227|
 |fibcalc.Concurrent|58408427|4921236|499|
+
+## Comparison of sequential implementation and concurrent
+### H3 Quad-core Cortex-A7
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/H3%20Quad-core%20Cortex-A7/0-60000.PNG?raw=true)
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/H3%20Quad-core%20Cortex-A7/0-15000000.PNG?raw=true)
+
+### Intel(R) Celeron(R) CPU 1005M @ 1.90GHz
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/Intel(R)%20Celeron(R)%20CPU%201005M%20@%201.90GHz/0-60000.PNG?raw=true)
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/Intel(R)%20Celeron(R)%20CPU%201005M%20@%201.90GHz/0-15000000.PNG?raw=true)
+
+### Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/Intel(R)%20Core(TM)%20i5-7500%20CPU%20@%203.40GHz/0-125000.PNG?raw=true)
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/Intel(R)%20Core(TM)%20i5-7500%20CPU%20@%203.40GHz/0-15000000.PNG?raw=true)
+
+### AMD Ryzen 5 3600 6-Core Processor
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/AMD%20Ryzen%205%203600%206-Core%20Processor/0-125000.PNG?raw=true)
+![](https://github.com/psyhatter/fibcalc/blob/master/graphs/AMD%20Ryzen%205%203600%206-Core%20Processor/0-15000000.PNG?raw=true)
