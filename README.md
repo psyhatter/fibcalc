@@ -1,4 +1,6 @@
 # fibcalc
+[![GoDoc](https://godoc.org/github.com/psyhatter/fibcalc?status.svg)](https://godoc.org/github.com/psyhatter/fibcalc)
+
 Package fibcalc implements the calculation of the Fibonacci number by raising the matrix to a power optimized enough to calculate large Fibonacci numbers.
 
 ## Getting Started
