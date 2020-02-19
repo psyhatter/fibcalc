@@ -47,11 +47,12 @@ F(1048576) mod 65537 = 49949
 ## Comparison with other implementations (n = 1048575)
 |implementation|ns/op|B/op|allocs/op|
 |---|---|---|---|
-|[massimo-marino](https://github.com/massimo-marino/go-fibonacci)|7296502900|220671040|4556|
-|[T-PWK](https://github.com/T-PWK/go-fibonacci)|7260525000|220671024|4554|
-|[visualfc](https://github.com/visualfc/fibutil)|134541862|8177616|1254|
-|fibcalc.Sequential|92443066|2669724|227|
-|fibcalc.Concurrent|58408427|4921236|499|
+|[massimo-marino](https://github.com/massimo-marino/go-fibonacci)|7323484400|220671040|4556|
+|[T-PWK](https://github.com/T-PWK/go-fibonacci)|7317491700|220671120|4555|
+|[sevlyar](https://github.com/sevlyar/fibonacci)|211470120|7720432|994|
+|[visualfc](https://github.com/visualfc/fibutil)|135291675|8177616|1254|
+|fibcalc.Sequential|92109933|2669724|227|
+|fibcalc.Concurrent|60074050|4921615|500|
 
 ## Comparison of sequential implementation and concurrent
 ### H3 Quad-core Cortex-A7
