@@ -87,7 +87,7 @@ func Sequential(n uint64) *big.Int {
 			// Multiply the vector R by the matrix A
 			// rc, rd = rc*a+rd*c, rc*b+rd*d
 			rc.Add(tempA.Mul(rc, a), tempB.Mul(rd, c))
-			rd.Add(tempA.Mul(rd, d), tempB.Mul(copyC, b))
+			rd.Add(tempB.Mul(copyC, b), tempA.Mul(rd, d))
 		}
 
 		// Temporary copy for calculations
@@ -187,6 +187,5 @@ func Concurrent(n uint64) *big.Int {
 
 // uint64calc big.Int wrapper for the Uint64 function
 func uint64calc(n uint64) *big.Int {
-	result := &big.Int{}
-	return result.SetUint64(Uint64(uint8(n)))
+	return new(big.Int).SetUint64(Uint64(uint8(n)))
 }

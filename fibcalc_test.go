@@ -1,8 +1,8 @@
 package fibcalc_test
 
 import (
-	"github.com/psyhatter/fibcalc"
 	"fmt"
+	"github.com/psyhatter/fibcalc"
 	"strconv"
 	"testing"
 )
@@ -172,7 +172,7 @@ func BenchmarkUint64(b *testing.B) {
 	// number of ones in binary representation of n.
 	// In the range from 0 to 93, these are numbers
 	// 0, 1, 3, 7, 15, 31, 63.
-	tests := make([]uint8, 7, 7)
+	tests := make([]uint8, 7)
 	for i := 0; i < len(tests); i++ {
 		tests[i] = 1<<i - 1
 	}
@@ -193,7 +193,7 @@ func BenchmarkSequential(b *testing.B) {
 	// Most arithmetic operations are necessary for
 	// calculating 2^k - 1. This is due to the
 	// number of ones in binary representation of n.
-	tests := make([]uint64, 25, 25)
+	tests := make([]uint64, 25)
 	for i := 0; i < len(tests); i++ {
 		tests[i] = 1<<i - 1
 	}
@@ -214,7 +214,7 @@ func BenchmarkConcurrent(b *testing.B) {
 	// Most arithmetic operations are necessary for
 	// calculating 2^k - 1. This is due to the
 	// number of ones in binary representation of n.
-	tests := make([]uint64, 25, 25)
+	tests := make([]uint64, 25)
 	for i := 0; i < len(tests); i++ {
 		tests[i] = 1<<i - 1
 	}

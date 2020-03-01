@@ -14,8 +14,8 @@ go get github.com/psyhatter/fibcalc
 package main
 
 import (
-	"github.com/psyhatter/fibcalc"
 	"fmt"
+	"github.com/psyhatter/fibcalc"
 	"math/big"
 )
 
